@@ -13,7 +13,7 @@ export default function Navbar(){
 <a href="#home" className="hover:text-gray-400 transition duration-300">Home</a>
 <a href="#about" className="hover:text-gray-400 transition duration-300" >About</a>
 <a href="#skills" className="hover:text-gray-400 transition duration-300">Skills</a>
-<a href="#projects" className="hover:text-gray-400 transition duration-300">Projects</a>
+<a href="#projects" onClick={()=> document.getElementById("projects")?.scrollIntoView({behavior:"smooth"})} className="hover:text-gray-400 transition duration-300">Projects</a>
 <a href="#contact" className="hover:text-gray-400 transition duration-300">Contact</a>
 
 
