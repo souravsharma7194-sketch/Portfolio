@@ -3,7 +3,7 @@ return(
 
 
 
-<section id="contact" className="min-h-screen w-full bg-amber-400">
+<section id="contact" className="min-h-screen w-full ">
 Contact
 </section>
 

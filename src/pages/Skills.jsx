@@ -1,3 +1,8 @@
+import { motion } from "framer-motion";
+
+
+
+
 export default function Skills(){
 
 const skills = [
@@ -29,10 +34,14 @@ const skills = [
 
 {skills.map( (skill,index)=> (
 
-<div key={index}
+<motion.div key={index}
+initial = {{opacity: 0, scale: 0.8}}
+whileInView={{opacity: 1, scale: 1 }}
+transition={{duration: 0.4, delay: index * 0.1, ease:"easeOut" }}
+viewport={{once: true , amount: 0.3}}
 className="bg-white shadow-md rounded-lg px-6 py-4 text-lg font-semibold hover:shadow-xl hover:scale-105 transition duration-300"
 
->{skill}</div>
+>{skill}</motion.div>
 ))}
 
 
