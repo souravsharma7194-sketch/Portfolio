@@ -3,7 +3,7 @@ export default function About(){
 
 return(
 
-<section id="about" className="min-h-screen w-full bg-white flex flex-col justify-center items-center text-center px-6">
+<section id="about" className="min-h-screen w-full flex flex-col justify-center items-center text-center px-6">
     
 <h2 className="text-4xl mb-6 font-bold tracking-wide">About Me</h2>    
     <p className="text-lg max-w-2xl leading-relaxed">

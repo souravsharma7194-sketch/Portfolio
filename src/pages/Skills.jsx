@@ -22,7 +22,7 @@ const skills = [
 
     return (
 
-<section id="skills" className="min-h-screen w-full bg-gray-100 flex flex-col justify-center items-center text-center px-6">
+<section id="skills" className="min-h-screen w-full flex flex-col justify-center items-center text-center px-6">
 
 <h2 className="text-4xl font-bold mb-6 tracking-wide">Skills</h2>
 <p className="text-lg max-w-2xl leading-relaxed mb-8"> I specialize in building responsive, user-friendly web applications using modern
