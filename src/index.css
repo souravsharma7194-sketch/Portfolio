@@ -3,9 +3,16 @@
 
 body{
 
-background: linear-gradient(135deg,#0f2027, #203a43, #2c5364);
-overflow-x: hidden;
+   /*background: linear-gradient(135deg, #d4fc79, #96e6a1); */
+  overflow-x: hidden;
+font-family: "poppins" , sans-serif;
+background: radial-gradient(circle at 50% 50%, #1a1a2e, #0f0f1b);
+text-decoration: wavy;
+color: white;
+}
+h1,h2,h3{
 
+font-family: "Roboto" ,sans-serif;
 
 
 }

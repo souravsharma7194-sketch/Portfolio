@@ -41,12 +41,12 @@ useEffect(() => {
 
 return (
 <>
-<div className="fixed w-3 h-3 border-2 border-black rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999]"
+<div className="fixed w-3 h-3 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999]"
 style={{left: `${ringPosition.x}px`, top: `${ringPosition.y}px`}}>
 
 </div>
 
-<div className="fixed w-2 h-2 border-2 border-black rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999]"
+<div className="fixed w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 pointer-events-none -translate-x-1/2 -translate-y-1/2 z-[9999]"
 style = {{ left: `${position.x}px`, top: `${position.y}px`}} >
 
 </div>

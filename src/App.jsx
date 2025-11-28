@@ -8,8 +8,8 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Lenis from "@studio-freight/lenis";
 import ParticlesBackground from "./components/ParticlesBackground";
-
 export default function App(){
+
 
 
 const lenisRef = useRef(null);
@@ -43,11 +43,9 @@ lenisRef.current = null;
 
 
   }
-},[]);
+},[]); 
 
-
-
-return (
+ return (
 
 <>
 <ParticlesBackground/>
@@ -55,9 +53,9 @@ return (
 <Navbar/>
 <div className="pt-8">
 <Home/>
+<Skills/>
 <About/>
 <Projects/>
-<Skills/>
 <Contact/>
 </div>
 </>
