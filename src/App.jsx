@@ -54,8 +54,8 @@ lenisRef.current = null;
 <div className="pt-8">
 <Home/>
 <Skills/>
-<About/>
 <Projects/>
+<About/>
 <Contact/>
 </div>
 </>

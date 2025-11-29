@@ -6,9 +6,8 @@ body{
    /*background: linear-gradient(135deg, #d4fc79, #96e6a1); */
   overflow-x: hidden;
 font-family: "poppins" , sans-serif;
-background: radial-gradient(circle at 50% 50%, #1a1a2e, #0f0f1b);
-text-decoration: wavy;
-color: white;
+background: radial-gradient(circle at 50% 50%, #0d1117, #010409);
+color: #c9d1d9;
 }
 h1,h2,h3{
 

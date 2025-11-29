@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss, SiRedux } from "react-icons/si";
 
 
 
@@ -7,14 +9,18 @@ export default function Skills(){
 
 const skills = [
 
-"HTML",
-"CSS",
-"JavaScript",
-"ReactJS",
-"Tailwind CSS", 
-    "Git & GitHub", 
-    "Redux", 
-    "Responsive Design"
+  { name: "HTML", icon: <FaHtml5 /> },
+  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <FaJs /> },
+  { name: "ReactJS", icon: <FaReact /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "Git & GitHub", icon: <FaGitAlt /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "Responsive Design", icon: <FaReact /> }
+
+
+
+
 ];
 
 
@@ -39,9 +45,24 @@ initial = {{opacity: 0, scale: 0.8}}
 whileInView={{opacity: 1, scale: 1 }}
 transition={{duration: 0.4, delay: index * 0.1, ease:"easeOut" }}
 viewport={{once: true , amount: 0.3}}
-className="bg-white shadow-md rounded-lg px-6 py-4 text-lg font-semibold hover:shadow-xl hover:scale-105 transition duration-300"
+whileHover={{rotateX: 15, rotateY: -10, scale:1.05 , transition:{duration: 0.15, ease:"easeOut"}
+}}
+style = {{transformStyle:"preserve-3d" , perspective: 1000}}
 
->{skill}</motion.div>
+
+className="flex flex-col items-center justify-center 
+             bg-[#1c1c2b] rounded-xl px-6 py-6 text-lg font-semibold 
+             shadow-lg border border-gray-700 
+             hover:border-pink-600 hover:bg-gradient-to-br hover:from-pink-700 hover:to-blue-700 
+             hover:shadow-[0_0_15px_rgba(255,0,150,0.7)] hover:scale-110 
+             transition-all duration-300"
+
+>
+    <div className="text-5xl mb-3">{skill.icon}</div>
+
+<p className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-500">{skill.name}</p>
+</motion.div>
+
 ))}
 
 
